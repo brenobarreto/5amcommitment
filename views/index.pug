@@ -4,10 +4,17 @@ block variables
   - var title = "Home"
 
 block content
-  h2.text-center Express App
+  h2#date.text-center
+  h3#time.text-center
+  p You deserve #{points} points
 
-  .row
-    .offset-sm-2.col-sm-8
-      .jumbotron.text-center.
-        Welcome to your new Express app! Please visit the
-        #[a(href="https://github.com/rdegges/okta-express-login-portal", title="okkta-express-login-portal on GitHub") GitHub page] to learn more.
+  form(action="/", method='post')
+    label= question
+        input(type="text", name="userAnswer")
+    button(type="submit") I'm awake
+
+  p !{JSON.stringify(scoreBoard)}
+
+  ul
+    each user in scoreBoard
+      li= user
