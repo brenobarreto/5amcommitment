@@ -15,7 +15,7 @@
     "express-session": "^1.17.0",
     "js-stringify": "^1.0.2",
     "morgan": "^1.9.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "request": "^2.88.2",
     "static-favicon": "~1.0.0",
     "uglify-js": "^3.8.0"
